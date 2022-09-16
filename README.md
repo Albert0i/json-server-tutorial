@@ -3,13 +3,11 @@
 [![alt The Unparalleled Adventure of One Hans Pfaall](img/The_Unparalleled_Adventure_of_One_Hans_Pfaall.png)](https://www.youtube.com/watch?v=FZ7qdTV4ouo)
 
 ## Forward
-It was a hot day after mid-autumn. Respiratory was scarcely possible. 
-Roaming in the city till dark, 
+It was a hot day after mid-autumn. The whole city was enshrouded by moan and deadly pain, respiratory was scarcely possible. 
 
 ## I. To prepare
 ```bash
 npm install json-server --save-dev
-npm install serve --save-dev
 ```
 package.json
 ```json
@@ -19,15 +17,13 @@ package.json
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json-server": "json-server --watch data/db.json --port 8000", 
-    "dev": "serve -s . -l 3000" 
+    "json-server": "json-server --watch data/db.json --port 8000"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "json-server": "^0.17.0",
-    "serve": "^14.0.1"
+    "json-server": "^0.17.0"
   }
 }
 ```
