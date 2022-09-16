@@ -2,7 +2,11 @@
 
 [![alt The Unparalleled Adventure of One Hans Pfaall](img/The_Unparalleled_Adventure_of_One_Hans_Pfaall.png)](https://www.youtube.com/watch?v=FZ7qdTV4ouo)
 
-## I. 
+## Forward
+It was a hot day after mid-autumn. Respiratory was scarcely possible. 
+Roaming in the city till dark, 
+
+## I. To prepare
 ```bash
 npm install json-server --save-dev
 npm install serve --save-dev
@@ -28,12 +32,15 @@ package.json
 }
 ```
 ## II. 
+
 ## III. 
+
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
 2. [Up & Running with JSON Server (Part 2)](https://www.youtube.com/watch?v=VF3TI4Pj_kM)
 3. [typicode/json-server](https://github.com/typicode/json-server)
 4. [Create React App | Deployment](https://create-react-app.dev/docs/deployment/)
 5. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
+
 
 ## EOF (2022/09/16)
