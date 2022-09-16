@@ -32,7 +32,7 @@ package.json
 ```bash
 npm run json-server
 ```
-![alt json server](img/json_server.jpg)
+![alt json server](img/json_server.JPG)
 
 ## III. To Round up
 Navigate to <code>http://localhost:3000</code> and everything works as expected.. 
