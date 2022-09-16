@@ -31,9 +31,9 @@ package.json
   }
 }
 ```
-## II. 
+## II. To put in work 
 
-## III. 
+## III. To Round up
 
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
