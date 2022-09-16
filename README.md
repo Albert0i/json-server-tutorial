@@ -3,7 +3,7 @@
 [![alt The Unparalleled Adventure of One Hans Pfaall](img/The_Unparalleled_Adventure_of_One_Hans_Pfaall.png)](https://www.youtube.com/watch?v=FZ7qdTV4ouo)
 
 ## Forward
-It was a hot day after mid-autumn. The whole city was enshrouded by moan and deadly pain. Every pores were blocked with dirt, respiratory was scarcely possible. Stalking through the dust, I reached the station and waited for the return carriage. Neither stars nor crescent presented in the firmament. 
+It was a hot day after mid-autumn. The whole city was enshrouded by moan and deadly pain. Every pores were blocked with dirt, respiratory was scarcely possible. Stalking through the dust, I managed to reach the station and get ready for return carriage. Neither stars nor crescent presented in the firmament. 
 
 ## I. To prepare
 ```bash
