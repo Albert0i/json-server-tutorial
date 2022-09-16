@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json-server": "json-server --watch data/db.json --port 8000"
+    "json-server": "json-server --watch data/db.json --port 3000 --static ./"
   },
   "keywords": [],
   "author": "",

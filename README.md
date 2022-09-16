@@ -17,7 +17,7 @@ package.json
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json-server": "json-server --watch data/db.json --port 8000"
+    "json-server": "json-server --watch data/db.json --port 3000 --static ./"
   },
   "keywords": [],
   "author": "",
@@ -32,9 +32,10 @@ package.json
 ```bash
 npm run json-server
 ```
-Right-click on <code>index.html</code> and choose <code>Open with Live Server</code>.
+![alt json server](img/json_server.jpg)
 
 ## III. To Round up
+Navigate to <code>http://localhost:3000</code> and everything works as expected.. 
 
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
