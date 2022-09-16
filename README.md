@@ -27,7 +27,12 @@ package.json
   }
 }
 ```
+
 ## II. To put in work 
+```bash
+npm run json-server
+```
+Right-click on <code>index.html</code> and choose <code>Open with Live Server</code>.
 
 ## III. To Round up
 
@@ -35,8 +40,7 @@ package.json
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
 2. [Up & Running with JSON Server (Part 2)](https://www.youtube.com/watch?v=VF3TI4Pj_kM)
 3. [typicode/json-server](https://github.com/typicode/json-server)
-4. [Create React App | Deployment](https://create-react-app.dev/docs/deployment/)
-5. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
+4. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
 
 
 ## EOF (2022/09/16)
