@@ -35,7 +35,11 @@ npm run json-server
 ![alt json server](img/json_server.JPG)
 
 ## III. To Round up
-Navigate to <code>http://localhost:3000</code> and everything works as expected.. 
+- Navigate to <code>http://localhost:3000</code>, or 
+
+- Right-click on <code>index.html</code> and choose <code>Open with Live Server</code>
+
+Either way may or may not work as expected. 
 
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
