@@ -6,6 +6,7 @@
 It was a hot day after mid-autumn. The whole city was enshrouded by moan and deadly pain. Every pores were blocked with dirt, respiratory was scarcely possible. Stalking through the dust, I managed to reach the station and get ready for return carriage. Neither stars nor crescent presented in the firmament. 
 
 ## I. To prepare
+> Get a full fake REST API with zero coding in less than 30 seconds (seriously)
 ```bash
 npm install json-server --save-dev
 ```
@@ -27,6 +28,11 @@ package.json
   }
 }
 ```
+```
+  --port, -p         Set port                                    [default: 3000]
+  --watch, -w        Watch file(s)                                     [boolean]
+  --static, -s       Set static files directory
+```
 
 ## II. To put in work 
 ```bash
@@ -39,7 +45,9 @@ npm run json-server
 
 - Right-click on <code>index.html</code> and choose <code>Open with Live Server</code>
 
-Either way may or may not work as expected. 
+Either way will work as expected. 
+
+![alt All Blogs](img/All_Blogs.JPG)
 
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
@@ -48,4 +56,4 @@ Either way may or may not work as expected.
 4. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
 
 
-## EOF (2022/09/16)
+## EOF (2022/09/19)
