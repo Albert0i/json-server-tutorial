@@ -43,7 +43,7 @@ npm run json-server
 ## III. To Round up
 - Navigate to <code>http://localhost:3000</code>, or 
 
-- Right-click on <code>index.html</code> and choose <code>Open with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)</code>
+- Right-click on <code>index.html</code> and choose <code>Open with [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)</code> in <code>[VSCode](https://code.visualstudio.com/)</code>
 
 Either way will work as expected. 
 
