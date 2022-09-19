@@ -6,6 +6,8 @@ const id = new URLSearchParams(window.location.search).get('id')
 import { HOST_URI } from './conn.js'
 
 const renderDetails = async () => {
+    console.log('window.location.search=', window.location.search)
+
     const res = await fetch(HOST_URI + id)
     const post = await res.json()
     const template = `
@@ -19,7 +21,7 @@ const renderDetails = async () => {
 
 window.addEventListener('DOMContentLoaded', ()=> renderDetails())
 
-editBtn.addEventListener('click', async (e) => {
+editBtn.addEventListener('click', (e) => {
   window.location.replace('/edit.html?id=' + id)
 })
 

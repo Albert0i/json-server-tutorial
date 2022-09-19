@@ -26,8 +26,8 @@
     },
     {
       "title": "Testing",
-      "body": "Testing testing",
-      "likes": 0,
+      "body": "Testing testing\nTESTING@@@",
+      "likes": "0",
       "id": 5
     }
   ],

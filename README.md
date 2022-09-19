@@ -53,7 +53,11 @@ Either way will work as expected.
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
 2. [Up & Running with JSON Server (Part 2)](https://www.youtube.com/watch?v=VF3TI4Pj_kM)
 3. [typicode/json-server](https://github.com/typicode/json-server)
-4. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
+4. [Web APIs - MDN Web Docs | Document.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+5. [Web APIs - MDN Web Docs | Window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
+6. [Web APIs - MDN Web Docs | URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
+7. [Web APIs - MDN Web Docs | Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
+8. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
 
 
 ## EOF (2022/09/19)

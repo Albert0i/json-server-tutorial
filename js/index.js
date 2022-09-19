@@ -24,7 +24,9 @@ const renderPosts = async (term) => {
     })
     container.innerHTML = template
 }
+
 window.addEventListener('DOMContentLoaded', () => renderPosts())
+
 searchForm.addEventListener('submit', (e) => {
   e.preventDefault()
   renderPosts(searchForm.term.value.trim())
