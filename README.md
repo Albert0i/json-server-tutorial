@@ -24,7 +24,7 @@ package.json
   "main": "index.js",
   "scripts": {
     "json-server": "json-server data/db.json --watch --port 3000 --static ./",
-    "json-dynamic": "json-server generate.js --port 3000 --static ./"
+    "json-dynamic": "json-server js/generate.js --port 3000 --static ./"
   },
   "keywords": [],
   "author": "",
