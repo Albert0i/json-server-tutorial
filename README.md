@@ -10,6 +10,11 @@ It was a hot day after mid-autumn. The whole city was enshrouded by moan and dea
 ```bash
 npm install json-server --save-dev
 ```
+if you prefer dynamic generated json data, you need two more packages
+```bash 
+npm install lodash --save-dev
+npm install @faker-js/faker --save-dev
+```
 package.json
 ```json
 {
@@ -18,17 +23,21 @@ package.json
   "description": "",
   "main": "index.js",
   "scripts": {
-    "json-server": "json-server --watch data/db.json --port 3000 --static ./"
+    "json-server": "json-server data/db.json --watch --port 3000 --static ./",
+    "json-dynamic": "json-server generate.js --port 3000 --static ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "json-server": "^0.17.0"
+    "@faker-js/faker": "^7.5.0",
+    "json-server": "^0.17.0",
+    "lodash": "^4.17.21"
   }
 }
 ```
-```bash
+
+```bash 
 json-server [options] <source>
 
 Options:
@@ -56,12 +65,35 @@ Examples:
   json-server file.js
   json-server http://example.com/db.json
 ```
+generate.js
+```javascript
+module.exports = () => {
+    const { faker } = require("@faker-js/faker")
+    const _ = require("lodash")
+
+    return { posts: _.times(100, function(n) {
+                return {
+                    id: n, 
+                    title: faker.hacker.phrase(),
+                    body: faker.lorem.paragraph(),
+                    likes: Math.round(Math.random() * 50)
+                } 
+        })
+    }
+}
+```
+
 
 ## II. To put in work 
 ```bash
 npm run json-server
 ```
+or 
+```bash
+npm run json-dynamic
+```
 ![alt json server](img/json_server.JPG)
+
 
 ## III. To Round up
 - Navigate to <code>http://localhost:3000</code>, or 
@@ -72,6 +104,7 @@ Either way will work as expected.
 
 ![alt All Blogs](img/All_Blogs.JPG)
 
+
 ## IV. Reference
 1. [Up & Running with JSON Server (Part 1)](https://www.youtube.com/watch?v=mAqYJF-yxO8)
 2. [Up & Running with JSON Server (Part 2)](https://www.youtube.com/watch?v=VF3TI4Pj_kM)
@@ -80,7 +113,10 @@ Either way will work as expected.
 5. [Web APIs - MDN Web Docs | Window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
 6. [Web APIs - MDN Web Docs | URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
 7. [Web APIs - MDN Web Docs | Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
-8. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
+8. [Creating Demo APIs with json-server](https://egghead.io/lessons/javascript-creating-demo-apis-with-json-server)
+9. [npm | lodash](https://www.npmjs.com/package/lodash)
+10. [npm | @faker-js/faker](https://www.npmjs.com/package/@faker-js/faker)
+11. [The Unparalleled Adventure of One Hans Pfaall](https://poemuseum.org/the-unparalleled-adventure-of-one-hans-pfaall/)
 
 
 ## EOF (2022/09/20)
