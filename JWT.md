@@ -1,4 +1,4 @@
-# JWT
+# The way of JWT
 
 ![alt The Twilight Zone](img/The_Twilight_Zone.JPG)
 
@@ -45,14 +45,15 @@ package.json
 
 authServer.js
 ```javascript
-// authServer.js
 require('dotenv').config()
 const express = require('express')
 const app = express()
 const jwt = require('jsonwebtoken')
+const cors = require("cors");
 const port = process.env.AUTH_PORT || 3000
 
 app.use(express.json())
+app.use(cors({}));
 let refreshTokens = []
 
 app.post('/login', (req, res) => {
@@ -64,7 +65,7 @@ app.post('/login', (req, res) => {
 
   const user = { username }
   const accessToken = generateAccessToken(user)
-  
+  //const refreshToken = jwt.sign(user, process.env.REFRESH_TOKEN_SECRET)
   refreshToken = generateRefreshToken(user)
   refreshTokens.push(refreshToken)
 
@@ -108,7 +109,6 @@ app.listen(port, () => {
 
 jsonAuth.js
 ```javascript
-// jsonAuth.js
 require('dotenv').config()
 const jsonServer = require('json-server')
 const server = jsonServer.create()
@@ -156,7 +156,11 @@ npm run auth
 npm run json-auth
 ```
 
-Login
+![alt jwt](img/authServer.JPG)
+
+![alt jwt](img/json-auth.JPG)
+
+### Login
 ```bash
 POST http://localhost:4000/login
 Content-Type: application/json
@@ -167,14 +171,14 @@ Content-Type: application/json
 }
 ```
 
-Get Posts
+### Get Posts
 ```bash
 GET http://localhost:3000/posts/1
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Ikt5bGUiLCJpYXQiOjE2NjM4MzAzNzYsImV4cCI6MTY2MzgzMDQzNn0.LLzXnDo47BmiXab5q2JfBuJeNNjN5f4AEBgqhPsmjxY
 ```
 
-Refresh Token
+### Refresh Token
 ```bash
 POST http://localhost:4000/token
 Content-Type: application/json
@@ -184,7 +188,7 @@ Content-Type: application/json
 }
 ```
 
-Logout
+### Logout
 ```bash
 DELETE http://localhost:4000/logout
 Content-Type: application/json
@@ -197,6 +201,8 @@ Content-Type: application/json
 
 ## III. To Round up
 ![alt jwt](img/jwt.JPG)
+
+![alt jwt](img/jwtDemo.JPG)
 
 
 ## IV. Reference
@@ -223,4 +229,4 @@ AUTH_PORT=4000
 ```
 
 
-## EOF (2022/09/22)
+## EOF (2022/09/23)

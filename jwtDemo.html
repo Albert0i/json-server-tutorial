@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>JWT Demo</title>
+</head>
+<text>
+  <h1>JWT Demo</h1>
+
+  <div>
+        <p>
+            <input type="text" class="username" title="username" value="Kyle" style="width: 120px">
+            <input type="password" class="password" title="password" value="123456" style="width: 120px">    
+            <button class="login">login</button>
+            <button class="refresh">refresh</button>
+            <button class="logout">logout</button>    
+        </p>        
+        <p>
+            <label>Access Token: </label>
+            <input type="text" class="access-token" value=""></text>
+            <label>Refresh Token: </label>
+            <input type="text" class="refresh-token" value=""></text>
+        </p>
+        <hr/ >
+        <button class="get-posts">Get Posts</button>
+  </div>
+  
+  <div class="json-result">
+    <!-- inject json result here -->
+  </div>
+
+  <script type="module" src="js/jwtDemo.js"></script>
+</body>
+</html>

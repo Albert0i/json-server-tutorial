@@ -3,9 +3,11 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const jwt = require('jsonwebtoken')
+const cors = require("cors");
 const port = process.env.AUTH_PORT || 3000
 
 app.use(express.json())
+app.use(cors({}));
 let refreshTokens = []
 
 app.post('/login', (req, res) => {
