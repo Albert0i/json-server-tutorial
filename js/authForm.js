@@ -37,7 +37,7 @@ app.get('/form', authenticateToken, (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'form.html'))
 })
 
-app.delete("/logout", (req, res) => {
+app.delete("/logout", authenticateToken, (req, res) => {
   return res
     .clearCookie("access_token")
     .redirect('/login')
