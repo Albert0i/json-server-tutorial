@@ -4,7 +4,7 @@ const express = require('express')
 const app = express()
 const jwt = require('jsonwebtoken')
 const cors = require("cors");
-const port = process.env.AUTH_PORT || 3000
+const port = process.env.AUTH_PORT || 4000
 
 app.use(express.json())
 app.use(cors({}));
@@ -25,6 +25,7 @@ app.post('/login', (req, res) => {
 
   res.json({ accessToken, refreshToken })
 })
+
 app.post('/token', (req, res) => {
   console.log('token is', req.body.token)
 

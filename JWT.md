@@ -26,7 +26,9 @@ package.json
     "json-simple": "nodemon js/jsonSimple",
 
     "auth": "nodemon js/authServer",
-    "json-auth": "nodemon js/jsonAuth"
+    "json-auth": "nodemon js/jsonAuth",
+    
+    "authForm": "nodemon js/authForm"
   },
   "keywords": [],
   "author": "",
@@ -37,8 +39,10 @@ package.json
     "lodash": "^4.17.21"
   },
   "dependencies": {
+    "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.2",
-    "jsonwebtoken": "^8.5.1"
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.20"
   }
 }
 ```
@@ -71,6 +75,7 @@ app.post('/login', (req, res) => {
 
   res.json({ accessToken, refreshToken })
 })
+
 app.post('/token', (req, res) => {
   console.log('token is', req.body.token)
 
@@ -198,11 +203,21 @@ Content-Type: application/json
 }
 ```
 
+### Login form
+```bash
+npm run authForm
+```
+Navigate to <code>localhost:3000/login</code>
+
 
 ## III. To Round up
 ![alt jwt](img/jwt.JPG)
 
 ![alt jwt](img/jwtDemo.JPG)
+
+![alt login](img/login.JPG)
+
+![alt form](img/form.JPG)
 
 
 ## IV. Reference
@@ -211,6 +226,8 @@ Content-Type: application/json
 3. [typicode/json-server](https://github.com/typicode/json-server)
 4. [auth0/node-jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme)
 5. [REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+6. [Using Cookies with JWT in Node.js](https://dev.to/franciscomendes10866/using-cookies-with-jwt-in-node-js-8fn)
+7. [The Raven BY EDGAR ALLAN POE](https://www.poetryfoundation.org/poems/48860/the-raven)
 
 ## Appendix
 .env
@@ -229,4 +246,4 @@ AUTH_PORT=4000
 ```
 
 
-## EOF (2022/09/23)
+## EOF (2022/09/26)
