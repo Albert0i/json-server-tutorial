@@ -42,6 +42,7 @@ package.json
     "cookie-parser": "^1.4.6",
     "dotenv": "^16.0.2",
     "jsonwebtoken": "^8.5.1",
+    "method-override": "^3.0.0",
     "nodemon": "^2.0.20"
   }
 }
