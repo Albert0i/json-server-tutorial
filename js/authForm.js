@@ -1,4 +1,4 @@
-// authServer.js
+// authForm.js
 require('dotenv').config()
 const express = require('express')
 const cookieParser = require("cookie-parser");
@@ -28,8 +28,7 @@ app.post('/login', (req, res) => {
   const accessToken = generateAccessToken(user)
 
   res.cookie("access_token", accessToken, {
-            httpOnly: true,
-            secure: true,
+            httpOnly: true
   }).redirect('/form')
 })
 
