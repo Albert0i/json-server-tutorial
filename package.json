@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "json-render": "json-server data/db.json --watch --port 80 --static ./", 
     "json-server": "json-server data/db.json --watch --port 3000 --static ./",
     "json-dynamic": "json-server js/generate.js --port 3000 --static ./",
     "json-simple": "nodemon js/jsonSimple",
